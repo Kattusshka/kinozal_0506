@@ -40,7 +40,7 @@
 }
 
 .panel-info {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   border: none;
   background-color: #ededed;
 }
@@ -56,6 +56,11 @@
 .panel-body {
   border: 1px solid #dddddd;
   border-radius: 0 0 4px 4px;
+}
+
+.input-lg,
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
 }
 
 html {
