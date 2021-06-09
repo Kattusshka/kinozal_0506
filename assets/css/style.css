@@ -110,6 +110,38 @@ h1 {
   font-size: 1.15rem;
 }
 
+.site-search {
+  margin-bottom: 45px;
+}
+
+.user-login {
+  margin-bottom: 60px;
+}
+
+.new-films-row {
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+  margin-bottom: -15px;
+}
+
+.new-films-item {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  margin-bottom: 15px;
+}
+
+.new-films-item__thumbnail {
+  margin-bottom: 0;
+}
+
+.new-films-item__title {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
 .left-sidebar .panel:last-of-type {
   margin-bottom: 0;
 }
@@ -135,10 +167,10 @@ h1 {
 }
 
 .user-login__tabs a {
-  background-color: transparent !important;
-  border: none !important;
-  color: #dddddd;
   padding: 14px 5px 11px !important;
+  color: #dddddd;
+  border: none !important;
+  background-color: transparent !important;
 }
 
 .user-login__tabs .active a {
@@ -146,8 +178,8 @@ h1 {
 }
 
 .site-news-item {
-  clear: both;
   position: relative;
+  clear: both;
 }
 
 .site-news-item:not(:last-of-type) {
@@ -190,15 +222,15 @@ h1 {
 }
 
 .site-news-item__date {
-  font-size: 0.8rem;
   text-align: right;
   color: #909090;
+  font-size: 0.8rem;
 }
 
 .site-news-item:hover .site-news-item__image,
 .site-news-item:hover a {
-  border-color: #df8a13;
   color: #df8a13;
+  border-color: #df8a13;
 }
 
 .site-news-item:hover .site-news-item__image {
@@ -211,9 +243,13 @@ h1 {
   transition: background-color 0.25s;
 }
 
+.top-films {
+  position: relative;
+}
+
 .top-films__body {
-  padding-left: 0;
   padding-right: 0;
+  padding-left: 0;
 }
 
 .top-films__list {
@@ -221,11 +257,11 @@ h1 {
 }
 
 .top-films__item {
-  margin-left: -1px;
   margin-right: -1px;
-  padding-right: 55pxgu;
-  background-color: transparent;
+  margin-left: -1px;
+  padding-right: 55px;
   color: #165690 !important;
+  background-color: transparent;
 }
 
 .top-films__item:first-child {
@@ -239,9 +275,9 @@ h1 {
 }
 
 .top-films__item:hover, .top-films__item:focus {
-  background-color: #df8a13 !important;
   color: #ffffff !important;
   border-color: #df8a13;
+  background-color: #df8a13 !important;
 }
 
 .top-films__item:hover .badge, .top-films__item:focus .badge {
@@ -250,7 +286,7 @@ h1 {
 
 .top-films__badge {
   position: absolute;
-  top: 50%;
+  top: 50% !important;
   right: 15px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);

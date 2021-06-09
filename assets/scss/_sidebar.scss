@@ -101,6 +101,7 @@
 }
 
 .top-films {
+  position: relative;
   &__body {
     padding-right: 0;
     padding-left: 0;
@@ -113,7 +114,7 @@
   &__item {
     margin-right: -1px;
     margin-left: -1px;
-    padding-right: 55pxgu;
+    padding-right: 55px;
 
     color: $color-primary !important;
     background-color: transparent;
@@ -142,7 +143,7 @@
 
   &__badge {
     position: absolute;
-    top: 50%;
+    top: 50% !important;
     right: $gap;
 
     transform: translateY(-50%);

@@ -35,10 +35,6 @@ function scss() {
     pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError)).
     pipe(postcss(plugins)).
     pipe(dest(path.cssFolder)).
-    pipe(notify({
-      message: 'Compiled!',
-      sound: false
-    })).
     pipe(browserSync.reload({stream: true}));
 }
 
@@ -47,10 +43,6 @@ function scssDev() {
     pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError)).
     pipe(postcss(plugins)).
     pipe(dest(path.cssFolder, {sourcemaps: true})).
-    pipe(notify({
-      message: 'Compiled!',
-      sound: false
-    })).
     pipe(browserSync.reload({stream: true}));
 }
 
