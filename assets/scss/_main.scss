@@ -22,12 +22,105 @@
     padding-right: $gap / 2;
     margin-bottom: $gap;
 
+    &:hover h3 {
+      color: $color-light;
+    }
+
+    @include lg-min {
+      width: 25%;
+    }
+
+    @include sm-min {
+      width: 33.33333333%;
+    }
+
+    @include sm {
+      width: 50%;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
     &__thumbnail {
       margin-bottom: 0;
+
+      &:hover {
+        border-color: #df8a13;
+        background-color: #df8a13;
+        transition: background-color 0.25s;
+      }
     }
 
     &__title {
       @include text-shortener;
     }
+
+    &__caption {
+      padding: 9px;
+    }
   }
+}
+
+h3 {
+  font-size: $font-size;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.film-news-item {
+  h3 > a {
+    transition: color 0.25s;
+  }
+
+  &__title {
+    text-align: left;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    @include xs-min {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.thumbnail a > img,
+.thumbnail > img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.film-news-item {
+  &:hover h3 > a {
+    color: $color-accent;
+  }
+
+  &__thumbnail {
+    margin: 0;
+  }
+
+  &__text {
+    display: block;
+    margin: 0 0 10px;
+    text-align: justify;
+    letter-spacing: 0.002em;
+    font: $font-main;
+    font-size: 1rem;
+  }
+
+  &__button {
+    float: right;
+    margin-bottom: $gap * 2;
+    transition: background-color 0.25s;
+  }
+}
+
+.par2 {
+  letter-spacing: 0.0005em;
+}
+
+.film-news-item:hover .thumbnail {
+  background-color: #f0ad4f;
 }
