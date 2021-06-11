@@ -157,9 +157,9 @@ h2::after {
 }
 
 .new-films-row {
-  margin-right: -7.5px;
-  margin-left: -7.5px;
-  margin-bottom: -15px;
+  margin-right: -7.5px !important;
+  margin-left: -7.5px !important;
+  margin-bottom: -15px !important;
 }
 
 .new-films-item {
@@ -257,6 +257,46 @@ h3 {
 
 .film-news-item:hover .thumbnail {
   background-color: #f0ad4f;
+}
+
+.main .site-search {
+  margin-bottom: 45px;
+}
+
+.main .user-login {
+  margin-bottom: 60px;
+}
+
+.embed-responsive {
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.film-info {
+  font-size: 1.2em;
+}
+
+.film-info__well {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.film-info__badge {
+  font-size: 0.8em;
+}
+
+.film-info__wrapper:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.well {
+  background-color: #f1f1f1;
+  border-color: #dddddd;
+}
+
+.film-comment-form__button {
+  float: right;
 }
 
 .left-sidebar .panel:last-of-type {
@@ -410,6 +450,10 @@ h3 {
           transform: translateY(-50%);
 }
 
+.panel {
+  margin-bottom: 30px;
+}
+
 .footer {
   padding-top: 45px;
   color: #fbfbfb;
@@ -437,7 +481,7 @@ h3 {
 
 h4 {
   margin-top: 10px;
-  margin-bottom: 9.5px;
+  margin-bottom: 10px;
 }
 
 .footer ul {
@@ -463,6 +507,10 @@ h4 {
 }
 
 @media (min-width: 576px) {
+  h1 {
+    margin: -7.5px 0 45px;
+    font-size: 3rem;
+  }
   h2 {
     margin: 60px 0 45px 45px;
   }
@@ -536,5 +584,8 @@ h4 {
   .header-logo__title {
     letter-spacing: 0.2em;
     font-size: 2.5rem;
+  }
+  .film-news-item__title {
+    font-size: 1.25rem;
   }
 }

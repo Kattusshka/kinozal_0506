@@ -33,6 +33,11 @@ h1 {
   margin-bottom: 45px;
   position: relative;
 
+  @include xs-min {
+    margin: -7.5px 0 45px;
+    font-size: 3rem;
+  }
+
   @include xs {
     margin: 0 0 30px;
     font-size: 2rem;

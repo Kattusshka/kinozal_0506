@@ -12,9 +12,9 @@
 
 .new-films {
   &-row {
-    margin-right: -$gap / 2;
-    margin-left: -$gap / 2;
-    margin-bottom: -$gap;
+    margin-right: -$gap / 2 !important;
+    margin-left: -$gap / 2 !important;
+    margin-bottom: -$gap !important;
   }
 
   &-item {
@@ -83,6 +83,10 @@ h3 {
     @include xs-min {
       font-size: 1.5rem;
     }
+
+    @include xs {
+      font-size: 1.25rem;
+    }
   }
 }
 
@@ -123,4 +127,12 @@ h3 {
 
 .film-news-item:hover .thumbnail {
   background-color: #f0ad4f;
+}
+
+.main .site-search {
+  margin-bottom: 45px;
+}
+
+.main .user-login {
+  margin-bottom: 60px;
 }
