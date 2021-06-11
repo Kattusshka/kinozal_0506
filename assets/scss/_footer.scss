@@ -1,14 +1,15 @@
 .footer {
   padding-top: $gap * 3;
+
   color: darken($color-light, 1.5%);
   background-color: $color-dark;
 }
 
 .container-fluid {
-  padding-right: $gap;
-  padding-left: $gap;
   margin-right: auto;
   margin-left: auto;
+  padding-right: $gap;
+  padding-left: $gap;
 }
 
 .row {
@@ -17,19 +18,17 @@
 }
 
 .container {
-  padding-right: $gap;
-  padding-left: $gap;
   margin-right: auto;
   margin-left: auto;
+  padding-right: $gap;
+  padding-left: $gap;
 
   @include lg-min {
     width: 1170px;
   }
-
   @include md-min {
     width: 970px;
   }
-
   @include sm-min {
     width: 750px;
   }
@@ -42,8 +41,9 @@ h4 {
 
 .footer {
   ul {
-    list-style: none;
     padding: 0;
+
+    list-style: none;
   }
 
   a {
@@ -55,6 +55,7 @@ h4 {
 
   &-fifth {
     margin: 20px 0;
+
     text-align: center;
 
     a {

@@ -22,65 +22,75 @@ a {
 
 section {
   position: relative;
+
   overflow: hidden;
 }
 
 h1 {
+  position: relative;
+
   margin-top: (-$gap / 2);
+  margin-bottom: 45px;
 
   font-family: $font-header;
   font-size: 3rem;
-  margin-bottom: 45px;
-  position: relative;
 
   @include xs-min {
     margin: -7.5px 0 45px;
+
     font-size: 3rem;
   }
-
   @include xs {
     margin: 0 0 30px;
+
     font-size: 2rem;
   }
 
   &::after {
     position: absolute;
+
     width: 100%;
-    content: "";
-    border-bottom: 3px solid #f5c684;
     margin: 0.85em 0 0 15px;
+
+    content: "";
+
+    border-bottom: 3px solid #f5c684;
   }
 }
 
 h2 {
+  margin: 60px 0 45px 45px;
+
   font-family: $font-header;
   font-size: 2.5rem;
-  margin: 60px 0 45px 45px;
+
+  @include xs-min {
+    margin: 60px 0 45px 45px;
+  }
+  @include xs {
+    margin: 45px 0 30px 45px;
+
+    font-size: 1.75rem;
+  }
 
   &::before,
   &::after {
     position: absolute;
+
     content: "";
+
     border-bottom: 3px solid #f5c684;
   }
 
   &::before {
-    width: 30px;
     left: 0;
+
+    width: 30px;
     margin: 0.25em 0 0 0;
   }
 
   &::after {
     width: 100%;
     margin: 0.85em 0 0 15px;
-  }
-
-  @include xs-min {
-    margin: 60px 0 45px 45px;
-  }
-
-  @include xs {
-    margin: 45px 0 30px 45px;
-    font-size: 1.75rem;
   }
 }

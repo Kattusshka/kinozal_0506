@@ -13,29 +13,27 @@
 .new-films {
   &-row {
     margin-right: -$gap / 2 !important;
-    margin-left: -$gap / 2 !important;
     margin-bottom: -$gap !important;
+    margin-left: -$gap / 2 !important;
   }
 
   &-item {
-    padding-left: $gap / 2;
-    padding-right: $gap / 2;
     margin-bottom: $gap;
-
-    &:hover h3 {
-      color: $color-light;
-    }
+    padding-right: $gap / 2;
+    padding-left: $gap / 2;
 
     @include lg-min {
       width: 25%;
     }
-
     @include sm-min {
       width: 33.33333333%;
     }
-
     @include sm {
       width: 50%;
+    }
+
+    &:hover h3 {
+      color: $color-light;
     }
 
     &__image {
@@ -46,9 +44,10 @@
       margin-bottom: 0;
 
       &:hover {
+        transition: background-color 0.25s;
+
         border-color: #df8a13;
         background-color: #df8a13;
-        transition: background-color 0.25s;
       }
     }
 
@@ -63,10 +62,12 @@
 }
 
 h3 {
+  margin: 0;
+
+  text-align: center;
+
   font-size: $font-size;
   font-weight: 700;
-  text-align: center;
-  margin: 0;
 }
 
 .film-news-item {
@@ -75,15 +76,16 @@ h3 {
   }
 
   &__title {
-    text-align: left;
-    font-weight: normal;
     margin-top: 20px;
     margin-bottom: 10px;
+
+    text-align: left;
+
+    font-weight: normal;
 
     @include xs-min {
       font-size: 1.5rem;
     }
-
     @include xs {
       font-size: 1.25rem;
     }
@@ -107,16 +109,21 @@ h3 {
 
   &__text {
     display: block;
+
     margin: 0 0 10px;
+
     text-align: justify;
     letter-spacing: 0.002em;
+
     font: $font-main;
     font-size: 1rem;
   }
 
   &__button {
     float: right;
+
     margin-bottom: $gap * 2;
+
     transition: background-color 0.25s;
   }
 }
