@@ -88,25 +88,25 @@ section {
 }
 
 h1 {
+  position: relative;
   margin-top: -7.5px;
+  margin-bottom: 45px;
   font-family: "PT Serif", serif;
   font-size: 3rem;
-  margin-bottom: 45px;
-  position: relative;
 }
 
 h1::after {
   position: absolute;
   width: 100%;
+  margin: 0.85em 0 0 15px;
   content: "";
   border-bottom: 3px solid #f5c684;
-  margin: 0.85em 0 0 15px;
 }
 
 h2 {
+  margin: 60px 0 45px 45px;
   font-family: "PT Serif", serif;
   font-size: 2.5rem;
-  margin: 60px 0 45px 45px;
 }
 
 h2::before, h2::after {
@@ -116,8 +116,8 @@ h2::before, h2::after {
 }
 
 h2::before {
-  width: 30px;
   left: 0;
+  width: 30px;
   margin: 0.25em 0 0 0;
 }
 
@@ -158,14 +158,14 @@ h2::after {
 
 .new-films-row {
   margin-right: -7.5px !important;
-  margin-left: -7.5px !important;
   margin-bottom: -15px !important;
+  margin-left: -7.5px !important;
 }
 
 .new-films-item {
-  padding-left: 7.5px;
-  padding-right: 7.5px;
   margin-bottom: 15px;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
 }
 
 .new-films-item:hover h3 {
@@ -181,11 +181,11 @@ h2::after {
 }
 
 .new-films-item__thumbnail:hover {
-  border-color: #df8a13;
-  background-color: #df8a13;
   -webkit-transition: background-color 0.25s;
   -o-transition: background-color 0.25s;
   transition: background-color 0.25s;
+  border-color: #df8a13;
+  background-color: #df8a13;
 }
 
 .new-films-item__title {
@@ -201,10 +201,10 @@ h2::after {
 }
 
 h3 {
+  margin: 0;
+  text-align: center;
   font-size: 16px;
   font-weight: 700;
-  text-align: center;
-  margin: 0;
 }
 
 .film-news-item h3 > a {
@@ -214,10 +214,10 @@ h3 {
 }
 
 .film-news-item__title {
-  text-align: left;
-  font-weight: normal;
   margin-top: 20px;
   margin-bottom: 10px;
+  text-align: left;
+  font-weight: normal;
 }
 
 .thumbnail a > img,
@@ -239,7 +239,6 @@ h3 {
   margin: 0 0 10px;
   text-align: justify;
   letter-spacing: 0.002em;
-  font: "PT Sans", sans-serif;
   font-size: 1rem;
 }
 
@@ -291,8 +290,8 @@ h3 {
 }
 
 .well {
-  background-color: #f1f1f1;
   border-color: #dddddd;
+  background-color: #f1f1f1;
 }
 
 .film-comment-form__button {
@@ -461,10 +460,10 @@ h3 {
 }
 
 .container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .row {
@@ -473,10 +472,10 @@ h3 {
 }
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 h4 {
@@ -485,8 +484,8 @@ h4 {
 }
 
 .footer ul {
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 .footer a {
